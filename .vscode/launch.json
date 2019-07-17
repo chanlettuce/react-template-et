@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Renderer Process",
+      "type": "chrome",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceFolder}/electron-debug.bat",
+      "runtimeArgs": [],
+      "webRoot": "${workspaceRoot}/public",
+      "sourceMapPathOverrides": {
+        "webpack:///*": "${workspaceRoot}/src/*"
+      },
+      "timeout": 25000,
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
